@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #consola {
+            background-color: rgba(188, 141, 71, 0.5);
+            width: 800px;
+            height: 297px;
+        }
+
+        #izquierda {
+
+            float: left;
+            border-style: solid;
+            width: 150px;
+            height: 294px;
+        }
+
+        #game_watch {
+
+            height: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+        }
+
+        #pad {
+            height: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #central {
+            display: inline-block;
+            width: 450px;
+            height: 294px;
+            border-style: solid;
+        }
+
+        #estilo_pantalla {
+            border: white 8px outset;
+            margin: 20px 20px 0px 20px;
+        }
+
+        #videojuego {
+            border: #b33232 5px solid;
+            border-radius: 10px;
+            height: 204px;
+        }
+
+        #nintendo {
+
+            height: 20px;
+        }
+
+        #derecha {
+
+            float: right;
+            border-style: solid;
+            width: 182px;
+            height: 294px;
+        }
+
+        img.img_nintendo {
+            width: 20%;
+            margin-top: -30px;
+            margin-left: 145px;
+        }
+
+        img.pequeña {
+            width: 70%;
+            display: block;
+            margin: auto;
+
+        }
+
+        img.mediana {
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+
+        img.grande {
+            width: 375px;
+            height: 200px;
+            border-left: black 5px solid;
+            border-right: black 5px solid;
+            border-top: black 2px solid;
+            border-bottom: black 2px solid;
+        }
+
+        #botones_start {
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+
+        .boton {
+            width: 30px;
+            height: 20px;
+            background: darkgray;
+            border-radius: 50px;
+        }
+
+        .circulo_exterior {
+            border: #b33232 3px solid;
+            border-radius: 19px;
+            height: 19px;
+            width: 30px;
+
+        }
+
+        #botones_start p {
+            font-size: x-small;
+            margin: auto;
+            font-weight: bold;
+
+        }
+
+        #botones_ab {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 90px;
+        }
+
+        .boton_ab {
+            width: 30px;
+            height: 30px;
+            background: #ca3e3e;
+            border-radius: 50px;
+
+        }
+
+        .circulo_exterior_botones_ab {
+            border: #b33232 3px solid;
+            border-radius: 19px;
+            height: 30px;
+            width: 30px;
+
+        }
+
+        #botones_ab p {
+            margin-top: 5px;
+            margin-left: 15px;
+            font-weight: bold;
+
+        }
+
+        #cruceta {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent 35%, black 35%, black 65%, transparent 65%),
+                linear-gradient(to right, transparent 35%, black 35%, black 65%, transparent 65%);
+        }
+
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div id='consola'>
+        <div id='izquierda'>
+
+            <div id='game_watch'>
+                <img class="pequeña" src="Game_and_watch_logo.png">
+            </div>
+            <div id='pad'>
+                <img class="mediana" src="pad.png">
+            </div>
+
+        </div>
+
+        <div id='central'>
+
+            <div id="estilo_pantalla">
+                <div id='titulo' style="text-align: center;">SUPER MARIO BROS.</div>
+                <div id='videojuego'><img class="grande" src="mario.png"></div>
+                <div id="nintendo"><img class="img_nintendo" src="nintendo.svg"></div>
+            </div>
+        </div>
+
+
+
+        <div id='derecha'>
+            <div id="botones_start">
+                <div class="circulo_exterior">
+                    <div class="boton"></div>
+                </div>
+                <p>GAME</p>
+                <div class="circulo_exterior">
+                    <div class="boton"></div>
+                </div>
+                <p>TIME</p>
+                <div class="circulo_exterior">
+                    <div class="boton"></div>
+                </div>
+                <p>PAUSE/SET</p>
+            </div>
+            <div id="botones_ab">
+                <div class="left">
+                    <div class="circulo_exterior_botones_ab">
+                        <div class="boton_ab"></div>
+                    </div>
+                    <p>B</p>
+                </div>
+                <div class="right">
+                    <div class="circulo_exterior_botones_ab">
+                        <div class="boton_ab"></div>
+                    </div>
+                    <p>A</p>
+
+                </div>
+            </div>
+        </div>       
+
+</body>
+
+</html>
